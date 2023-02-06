@@ -1,0 +1,155 @@
+
+//Inserir----------------------------
+let request = require("request");
+let token = '6:4dacdb8e47193e8cbbabe508c3c59b4547e463817b1d9b9a1d20ab4812fe1a62';
+let options = { method: 'POST',
+  url: 'https://HOST/webservice/v1/cliente_contrato_desc_serv',
+  headers:
+   {
+     'Content-Type': 'application/json',
+     Authorization: 'Basic ' + new Buffer.from(token).toString('base64')
+   },
+  body:{
+    'id_contrato': '',
+    'tipo_acres_desc': 'A',
+    'tipo': 'S',
+    'id_login_tv': '',
+    'id_produto': '',
+    'descricao': '',
+    'id_produto_contrato_vinc': '',
+    'data': '',
+    'id_unidade': '',
+    'quantidade': '',
+    'valor_unitario': '',
+    'valor_total': '',
+    'valor_total2': '',
+    'repetir': 'V',
+    'repetir_qtde': '1',
+    'status': 'A',
+    'execucoes': '',
+    'ultima_execucao': '',
+    'status_nf21': 'A',
+    'execucoes_nf21': '0',
+    'ultima_execucao_nf21': '',
+    'pdesconto': '',
+    'vdesconto': '',
+    'id_sip': '',
+    'id_oss_chamado': '',
+    'id_oss_mensagem': '',
+    'id_contrato_aluguel': '',
+    'id_im_lanc_mensal': '',
+    'id_im_imovel': '',
+    'id_vd_contrato_produtos': '',
+    'id_areceber': '',
+    'tipo_produto': 'S'
+  },
+  json: true
+ };
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
+
+  console.log(body);
+});
+
+//Deletar----------------------------
+let request = require("request");
+let token = '6:4dacdb8e47193e8cbbabe508c3c59b4547e463817b1d9b9a1d20ab4812fe1a62';
+let options = { method: 'DELETE',
+  url: 'https://HOST/webservice/v1/cliente_contrato_desc_serv/Id_a_deletar',
+  headers:
+   {
+     'Content-Type': 'application/json',
+     Authorization: 'Basic ' + new Buffer.from(token).toString('base64')
+   }
+ };
+
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
+
+  console.log(body);
+});
+
+//Editar----------------------------
+let request = require("request");
+let token = '6:4dacdb8e47193e8cbbabe508c3c59b4547e463817b1d9b9a1d20ab4812fe1a62';
+let options = { method: 'PUT',
+  url: 'https://HOST/webservice/v1/cliente_contrato_desc_serv/Id_a_editar',
+  headers:
+   {
+     'Content-Type': 'application/json',
+     Authorization: 'Basic ' + new Buffer.from(token).toString('base64')
+   },
+  body:
+   {
+    "id_contrato": "",
+    "tipo_acres_desc": "A",
+    "tipo": "S",
+    "id_login_tv": "",
+    "id_produto": "",
+    "descricao": "",
+    "id_produto_contrato_vinc": "",
+    "data": "",
+    "id_unidade": "",
+    "quantidade": "",
+    "valor_unitario": "",
+    "valor_total": "",
+    "valor_total2": "",
+    "repetir": "V",
+    "repetir_qtde": "1",
+    "status": "A",
+    "execucoes": "",
+    "ultima_execucao": "",
+    "status_nf21": "A",
+    "execucoes_nf21": "0",
+    "ultima_execucao_nf21": "",
+    "pdesconto": "",
+    "vdesconto": "",
+    "id_sip": "",
+    "id_oss_chamado": "",
+    "id_oss_mensagem": "",
+    "id_contrato_aluguel": "",
+    "id_im_lanc_mensal": "",
+    "id_im_imovel": "",
+    "id_vd_contrato_produtos": "",
+    "id_areceber": "",
+    "tipo_produto": "S"
+   },
+  json: true
+  };
+
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
+
+  console.log(body);
+});
+
+//Listar----------------------------
+let request = require("request");
+let token = '6:4dacdb8e47193e8cbbabe508c3c59b4547e463817b1d9b9a1d20ab4812fe1a62';
+let options = { method: 'GET',
+  url: 'https://HOST/webservice/v1/cliente_contrato_desc_serv',
+  headers:
+   {
+     'Content-Type': 'application/json',
+     Authorization: 'Basic ' + new Buffer.from(token).toString('base64'),
+     ixcsoft: 'listar'
+   },
+  body:
+   { qtype: 'cliente_contrato_desc_serv.id',
+     query: '0',
+     oper: '>',
+     page: '1',
+     rp: '20',
+     sortname: 'cliente_contrato_desc_serv.id',
+     sortorder: 'desc'
+   },
+  json: true
+  };
+
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
+
+  console.log(body);
+});
+
+                    
