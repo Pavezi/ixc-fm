@@ -18,7 +18,7 @@ let Deletar = {
   almox: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/almox/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/almox/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -29,7 +29,7 @@ let Deletar = {
   veiculos_tracker: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/veiculos_tracker/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/veiculos_tracker/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -40,7 +40,7 @@ let Deletar = {
   ajuste_inventario: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/ajuste_inventario/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/ajuste_inventario/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -51,7 +51,7 @@ let Deletar = {
   auth_usuarios: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/auth_usuarios/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/auth_usuarios/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -62,7 +62,7 @@ let Deletar = {
   cdr: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/cdr/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cdr/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -73,7 +73,7 @@ let Deletar = {
   cidade: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/cidade/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cidade/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -84,7 +84,7 @@ let Deletar = {
   cliente: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/cliente/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -95,7 +95,7 @@ let Deletar = {
   cliente_contrato: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/cliente_contrato/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -106,7 +106,7 @@ let Deletar = {
   cliente_contrato_desc_serv: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/cliente_contrato_desc_serv/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato_desc_serv/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -117,7 +117,7 @@ let Deletar = {
   cliente_contrato_modelo: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/cliente_contrato_modelo/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato_modelo/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -128,7 +128,7 @@ let Deletar = {
   cliente_contrato_produtos_reajuste_valor: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/cliente_contrato_produtos_reajuste_valor/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato_produtos_reajuste_valor/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -139,7 +139,7 @@ let Deletar = {
   cliente_contrato_servicos_param: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/cliente_contrato_servicos_param/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato_servicos_param/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -150,7 +150,7 @@ let Deletar = {
   cliente_contrato_tipo: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/cliente_contrato_tipo/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato_tipo/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -161,7 +161,7 @@ let Deletar = {
   cnf_classificacao_tributaria: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/cnf_classificacao_tributaria/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cnf_classificacao_tributaria/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -172,7 +172,7 @@ let Deletar = {
   condicoes_pagamento: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/condicoes_pagamento/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/condicoes_pagamento/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -183,7 +183,7 @@ let Deletar = {
   configuracao_geral: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/configuracao_geral/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/configuracao_geral/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -194,7 +194,7 @@ let Deletar = {
   configuracao_mvno: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/configuracao_mvno/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/configuracao_mvno/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -205,7 +205,7 @@ let Deletar = {
   contas: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/contas/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/contas/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -216,7 +216,7 @@ let Deletar = {
   contato: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/contato/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/contato/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -227,7 +227,7 @@ let Deletar = {
   contato_tipo: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/contato_tipo/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/contato_tipo/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -238,7 +238,7 @@ let Deletar = {
   crm_canditados: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/crm_canditados/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/crm_canditados/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -249,7 +249,7 @@ let Deletar = {
   crm_planos_negociacoes: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/crm_planos_negociacoes/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/crm_planos_negociacoes/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -260,7 +260,7 @@ let Deletar = {
   crm_prospeccao_propostas: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/crm_prospeccao_propostas/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/crm_prospeccao_propostas/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -271,7 +271,7 @@ let Deletar = {
   crm_tipo_candidato: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/crm_tipo_candidato/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/crm_tipo_candidato/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -282,7 +282,7 @@ let Deletar = {
   df_elemento: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/df_elemento/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/df_elemento/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -293,7 +293,7 @@ let Deletar = {
   df_projeto: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/df_projeto/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/df_projeto/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -304,7 +304,7 @@ let Deletar = {
   df_tipo_elemento_regiao: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/df_tipo_elemento_regiao/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/df_tipo_elemento_regiao/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -315,7 +315,7 @@ let Deletar = {
   empresa_setor: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/empresa_setor/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/empresa_setor/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -326,7 +326,7 @@ let Deletar = {
   fh_onu_nao_autorizadas: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/fh_onu_nao_autorizadas/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fh_onu_nao_autorizadas/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -337,7 +337,7 @@ let Deletar = {
   fl_adto_salario: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/fl_adto_salario/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fl_adto_salario/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -348,7 +348,7 @@ let Deletar = {
   fn_apagar: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/fn_apagar/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_apagar/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -359,7 +359,7 @@ let Deletar = {
   fn_areceber: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/fn_areceber/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_areceber/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -370,7 +370,7 @@ let Deletar = {
   fn_areceber_baixas: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/fn_areceber_baixas/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_areceber_baixas/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -381,7 +381,7 @@ let Deletar = {
   fn_carteira_cobranca: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/fn_carteira_cobranca/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_carteira_cobranca/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -392,7 +392,7 @@ let Deletar = {
   fn_movim_finan: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/fn_movim_finan/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_movim_finan/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -403,7 +403,7 @@ let Deletar = {
   fornecedor: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/fornecedor/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fornecedor/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -414,7 +414,7 @@ let Deletar = {
   funcionarios: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/funcionarios/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/funcionarios/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -425,7 +425,7 @@ let Deletar = {
   hs_adm_artigos: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/hs_adm_artigos/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/hs_adm_artigos/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -436,7 +436,7 @@ let Deletar = {
   inventario_estoque: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/inventario_estoque/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/inventario_estoque/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -447,7 +447,7 @@ let Deletar = {
   inventario_estoque_almox: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/inventario_estoque_almox/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/inventario_estoque_almox/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -458,7 +458,7 @@ let Deletar = {
   linha_mvno: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/linha_mvno/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/linha_mvno/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -469,7 +469,7 @@ let Deletar = {
   patrimonio: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/patrimonio/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/patrimonio/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -480,7 +480,7 @@ let Deletar = {
   planejamento: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/planejamento/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/planejamento/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -491,7 +491,7 @@ let Deletar = {
   planejamento_analitico: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/planejamento_analitico/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/planejamento_analitico/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -502,7 +502,7 @@ let Deletar = {
   produtos: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/produtos/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/produtos/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -513,7 +513,7 @@ let Deletar = {
   produtos_ixc_mvno: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/produtos_ixc_mvno/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/produtos_ixc_mvno/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -524,7 +524,7 @@ let Deletar = {
   rad_caixa_ftth: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/rad_caixa_ftth/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/rad_caixa_ftth/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -535,7 +535,7 @@ let Deletar = {
   radacct: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/radacct/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radacct/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -546,7 +546,7 @@ let Deletar = {
   radgrupos: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/radgrupos/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radgrupos/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -557,7 +557,7 @@ let Deletar = {
   radpop: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/radpop/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -568,7 +568,7 @@ let Deletar = {
   radpop_ocorrencias: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/radpop_ocorrencias/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_ocorrencias/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -579,7 +579,7 @@ let Deletar = {
   radpop_olt_slot: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/radpop_olt_slot/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_olt_slot/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -590,7 +590,7 @@ let Deletar = {
   radpop_radio: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/radpop_radio/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_radio/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -601,7 +601,7 @@ let Deletar = {
   radpop_radio_cliente: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/radpop_radio_cliente/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_radio_cliente/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -612,7 +612,7 @@ let Deletar = {
   radpop_radio_cliente_fibra: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/radpop_radio_cliente_fibra/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_radio_cliente_fibra/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -623,7 +623,7 @@ let Deletar = {
   radpop_radio_cliente_fibra_perfil: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/radpop_radio_cliente_fibra_perfil/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_radio_cliente_fibra_perfil/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -634,7 +634,7 @@ let Deletar = {
   radusergroup: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/radusergroup/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radusergroup/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -645,7 +645,7 @@ let Deletar = {
   radusuarios: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/radusuarios/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radusuarios/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -656,7 +656,7 @@ let Deletar = {
   requisicao_material: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/requisicao_material/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/requisicao_material/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -667,7 +667,7 @@ let Deletar = {
   smtp: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/smtp/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/smtp/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -678,7 +678,7 @@ let Deletar = {
   su_diagnostico: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/su_diagnostico/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/su_diagnostico/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -689,7 +689,7 @@ let Deletar = {
   su_oss_assunto: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/su_oss_assunto/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/su_oss_assunto/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -700,7 +700,7 @@ let Deletar = {
   su_oss_chamado: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/su_oss_chamado/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/su_oss_chamado/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -711,7 +711,7 @@ let Deletar = {
   su_ticket: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/su_ticket/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/su_ticket/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -722,7 +722,7 @@ let Deletar = {
   su_ticket_setor: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/su_ticket_setor/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/su_ticket_setor/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -733,7 +733,7 @@ let Deletar = {
   transf_almox_top: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/transf_almox_top/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/transf_almox_top/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -744,7 +744,7 @@ let Deletar = {
   tv_usuarios: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/tv_usuarios/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/tv_usuarios/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -755,7 +755,7 @@ let Deletar = {
   unidades: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/unidades/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/unidades/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -766,7 +766,7 @@ let Deletar = {
   usuarios: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/usuarios/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/usuarios/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -777,7 +777,7 @@ let Deletar = {
   vd_contratos: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/vd_contratos/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/vd_contratos/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -788,7 +788,7 @@ let Deletar = {
   vd_pedido_venda: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/vd_pedido_venda/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/vd_pedido_venda/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -799,7 +799,7 @@ let Deletar = {
   vd_saida: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/vd_saida/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/vd_saida/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -810,7 +810,7 @@ let Deletar = {
   veiculos: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/veiculos/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/veiculos/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -821,7 +821,7 @@ let Deletar = {
   vendedor: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/vendedor/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/vendedor/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -832,7 +832,7 @@ let Deletar = {
   view_voip_sippeers_cliente: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/view_voip_sippeers_cliente/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/view_voip_sippeers_cliente/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -843,7 +843,7 @@ let Deletar = {
   voip_sippeers: async (token, id) => {
     let options = {
       method: "DELETE",
-      url: `https://isp.ixc/webservice/v1/voip_sippeers/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/voip_sippeers/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),

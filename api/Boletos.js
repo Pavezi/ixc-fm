@@ -2,7 +2,7 @@
 
 import axios from "axios";
 // URL do sistema
-const host = "https://isp.ixc/webservice/v1";
+const host = "https://fidelizoume.ixcsoft.com.br/webservice/v1";
 
 // Token do usuário criado nas configurações da API
 const token = "";
@@ -40,7 +40,7 @@ axios
 // const https = require("https");
 // const querystring = require("querystring");
 
-// const host = "https://isp.ixc/";
+// const host = "https://fidelizoume.ixcsoft.com.br/";
 // const token =
 //   "";
 // const selfSigned = true;

@@ -22,7 +22,7 @@ let Inserir = {
   almox: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/almox",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/almox",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -42,7 +42,7 @@ let Inserir = {
   veiculos_tracker: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/veiculos_tracker",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/veiculos_tracker",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -63,7 +63,7 @@ let Inserir = {
   ajuste_inventario: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/ajuste_inventario",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/ajuste_inventario",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -83,7 +83,7 @@ let Inserir = {
   auth_usuarios: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/auth_usuarios",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/auth_usuarios",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -103,7 +103,7 @@ let Inserir = {
   cdr: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/cdr",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/cdr",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -163,7 +163,7 @@ let Inserir = {
   cidade: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/cidade",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/cidade",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -185,7 +185,7 @@ let Inserir = {
   cliente: async (token) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/cliente",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -374,7 +374,7 @@ let Inserir = {
   cliente_contrato: async (token) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/cliente_contrato",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -544,7 +544,7 @@ let Inserir = {
   cliente_contrato_desc_serv: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/cliente_contrato_desc_serv",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato_desc_serv",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -592,7 +592,7 @@ let Inserir = {
   cliente_contrato_modelo: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/cliente_contrato_modelo",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato_modelo",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -630,7 +630,7 @@ let Inserir = {
   cliente_contrato_produtos_reajuste_valor: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/cliente_contrato_produtos_reajuste_valor",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato_produtos_reajuste_valor",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -667,7 +667,7 @@ let Inserir = {
   cliente_contrato_servicos_param: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/cliente_contrato_servicos_param",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato_servicos_param",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -698,7 +698,7 @@ let Inserir = {
   cliente_contrato_tipo: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/cliente_contrato_tipo",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato_tipo",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -730,7 +730,7 @@ let Inserir = {
   cnf_classificacao_tributaria: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/cnf_classificacao_tributaria",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/cnf_classificacao_tributaria",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -814,7 +814,7 @@ let Inserir = {
   condicoes_pagamento: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/condicoes_pagamento",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/condicoes_pagamento",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -843,7 +843,7 @@ let Inserir = {
   configuracao_geral: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/configuracao_geral",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/configuracao_geral",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1003,7 +1003,7 @@ let Inserir = {
   configuracao_mvno: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/configuracao_mvno",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/configuracao_mvno",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1025,7 +1025,7 @@ let Inserir = {
   contas: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/contas",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/contas",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1062,7 +1062,7 @@ let Inserir = {
   contato: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/contato",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/contato",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1145,7 +1145,7 @@ let Inserir = {
   contato_tipo: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/contato_tipo",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/contato_tipo",
       headers: {
         "Content-Type": "application/json",
       },
@@ -1159,7 +1159,7 @@ let Inserir = {
   crm_canditados: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/crm_canditados",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/crm_canditados",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1251,7 +1251,7 @@ let Inserir = {
   crm_planos_negociacoes: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/crm_planos_negociacoes",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/crm_planos_negociacoes",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1294,7 +1294,7 @@ let Inserir = {
   crm_prospeccao_propostas: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/crm_prospeccao_propostas",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/crm_prospeccao_propostas",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1321,7 +1321,7 @@ let Inserir = {
   crm_tipo_candidato: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/crm_tipo_candidato",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/crm_tipo_candidato",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1336,7 +1336,7 @@ let Inserir = {
   df_elemento: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/df_elemento",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/df_elemento",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1360,7 +1360,7 @@ let Inserir = {
   df_projeto: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/df_projeto",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/df_projeto",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1383,7 +1383,7 @@ let Inserir = {
   df_tipo_elemento_regiao: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/df_tipo_elemento_regiao",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/df_tipo_elemento_regiao",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1414,7 +1414,7 @@ let Inserir = {
   empresa_setor: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/empresa_setor",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/empresa_setor",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1436,7 +1436,7 @@ let Inserir = {
   fh_onu_nao_autorizadas: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/fh_onu_nao_autorizadas",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/fh_onu_nao_autorizadas",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1458,7 +1458,7 @@ let Inserir = {
   fl_adto_salario: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/fl_adto_salario",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/fl_adto_salario",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1483,7 +1483,7 @@ let Inserir = {
   fn_apagar: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/fn_apagar",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_apagar",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1537,7 +1537,7 @@ let Inserir = {
   fn_areceber: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/fn_areceber",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_areceber",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1631,7 +1631,7 @@ let Inserir = {
   fn_areceber_baixas: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/fn_areceber_baixas",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_areceber_baixas",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1659,7 +1659,7 @@ let Inserir = {
   fn_carteira_cobranca: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/fn_carteira_cobranca",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_carteira_cobranca",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1879,7 +1879,7 @@ let Inserir = {
   fn_movim_finan: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/fn_movim_finan",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_movim_finan",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1909,7 +1909,7 @@ let Inserir = {
   fornecedor: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/fornecedor",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/fornecedor",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1954,7 +1954,7 @@ let Inserir = {
   funcionarios: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/funcionarios",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/funcionarios",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2068,7 +2068,7 @@ let Inserir = {
   hs_adm_artigos: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/hs_adm_artigos",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/hs_adm_artigos",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2116,7 +2116,7 @@ let Inserir = {
   inventario_estoque: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/inventario_estoque",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/inventario_estoque",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2146,7 +2146,7 @@ let Inserir = {
   inventario_estoque_almox: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/inventario_estoque_almox",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/inventario_estoque_almox",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2177,7 +2177,7 @@ let Inserir = {
   linha_mvno: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/linha_mvno",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/linha_mvno",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2211,7 +2211,7 @@ let Inserir = {
   patrimonio: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/patrimonio",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/patrimonio",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2256,7 +2256,7 @@ let Inserir = {
   planejamento: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/planejamento",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/planejamento",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2280,7 +2280,7 @@ let Inserir = {
   planejamento_analitico: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/planejamento_analitico",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/planejamento_analitico",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2308,7 +2308,7 @@ let Inserir = {
   produtos: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/produtos",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/produtos",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2449,7 +2449,7 @@ let Inserir = {
   produtos_ixc_mvno: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/produtos_ixc_mvno",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/produtos_ixc_mvno",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2469,7 +2469,7 @@ let Inserir = {
   rad_caixa_ftth: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/rad_caixa_ftth",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/rad_caixa_ftth",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2504,7 +2504,7 @@ let Inserir = {
   radacct: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/radacct",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/radacct",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2549,7 +2549,7 @@ let Inserir = {
   radgrupos: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/radgrupos",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/radgrupos",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2657,7 +2657,7 @@ let Inserir = {
   radpop: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/radpop",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2685,7 +2685,7 @@ let Inserir = {
   radpop_ocorrencias: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/radpop_ocorrencias",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_ocorrencias",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2699,7 +2699,7 @@ let Inserir = {
   radpop_olt_slot: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/radpop_olt_slot",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_olt_slot",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2718,7 +2718,7 @@ let Inserir = {
   radpop_radio: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/radpop_radio",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_radio",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2782,7 +2782,7 @@ let Inserir = {
   radpop_radio_cliente: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/radpop_radio_cliente",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_radio_cliente",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2829,7 +2829,7 @@ let Inserir = {
   radpop_radio_cliente_fibra: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/radpop_radio_cliente_fibra",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_radio_cliente_fibra",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2915,7 +2915,7 @@ let Inserir = {
   radpop_radio_cliente_fibra_perfil: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/radpop_radio_cliente_fibra_perfil",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_radio_cliente_fibra_perfil",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2934,7 +2934,7 @@ let Inserir = {
   radusergroup: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/radusergroup",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/radusergroup",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2948,7 +2948,7 @@ let Inserir = {
   radusuarios: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/radusuarios",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/radusuarios",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3088,7 +3088,7 @@ let Inserir = {
   requisicao_material: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/requisicao_material",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/requisicao_material",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3111,7 +3111,7 @@ let Inserir = {
   smtp: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/smtp",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/smtp",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3142,7 +3142,7 @@ let Inserir = {
   su_diagnostico: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/su_diagnostico",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/su_diagnostico",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3161,7 +3161,7 @@ let Inserir = {
   su_oss_assunto: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/su_oss_assunto",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/su_oss_assunto",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3247,7 +3247,7 @@ let Inserir = {
   su_oss_chamado: async (token, status) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/su_oss_chamado",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/su_oss_chamado",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3332,7 +3332,7 @@ let Inserir = {
   su_ticket: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/su_ticket",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/su_ticket",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3405,7 +3405,7 @@ let Inserir = {
   su_ticket_setor: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/su_ticket_setor",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/su_ticket_setor",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3427,7 +3427,7 @@ let Inserir = {
   transf_almox_top: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/transf_almox_top",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/transf_almox_top",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3452,7 +3452,7 @@ let Inserir = {
   tv_usuarios: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/tv_usuarios",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/tv_usuarios",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3491,7 +3491,7 @@ let Inserir = {
   unidades: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/unidades",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/unidades",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3506,7 +3506,7 @@ let Inserir = {
   usuarios: async (token) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/usuarios",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/usuarios",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3562,7 +3562,7 @@ let Inserir = {
   vd_contratos: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/vd_contratos",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/vd_contratos",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3612,7 +3612,7 @@ let Inserir = {
   vd_pedido_venda: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/vd_pedido_venda",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/vd_pedido_venda",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3658,7 +3658,7 @@ let Inserir = {
   vd_saida: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/vd_saida",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/vd_saida",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3723,7 +3723,7 @@ let Inserir = {
   veiculos: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/veiculos",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/veiculos",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3752,7 +3752,7 @@ let Inserir = {
   vendedor: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/vendedor",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/vendedor",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3782,7 +3782,7 @@ let Inserir = {
   view_voip_sippeers_cliente: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/view_voip_sippeers_cliente",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/view_voip_sippeers_cliente",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3894,7 +3894,7 @@ let Inserir = {
   voip_sippeers: async (token, params) => {
     let options = {
       method: "POST",
-      url: "https://isp.ixc/webservice/v1/voip_sippeers",
+      url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/voip_sippeers",
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),

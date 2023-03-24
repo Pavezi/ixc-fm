@@ -22,7 +22,7 @@ let Editar = {
   almox: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/almox/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/almox/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -41,7 +41,7 @@ let Editar = {
   veiculos_tracker: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/veiculos_tracker/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/veiculos_tracker/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -61,7 +61,7 @@ let Editar = {
   ajuste_inventario: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/ajuste_inventario/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/ajuste_inventario/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -80,7 +80,7 @@ let Editar = {
   auth_usuarios: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/auth_usuarios/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/auth_usuarios/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -99,7 +99,7 @@ let Editar = {
   cdr: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/cdr/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cdr/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -157,7 +157,7 @@ let Editar = {
   cidade: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/cidade/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cidade/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -179,7 +179,7 @@ let Editar = {
   cliente: async (token, id) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/cliente/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -362,7 +362,7 @@ let Editar = {
   cliente_contrato: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/cliente_contrato/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -513,7 +513,7 @@ let Editar = {
   cliente_contrato_desc_serv: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/cliente_contrato_desc_serv/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato_desc_serv/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -560,7 +560,7 @@ let Editar = {
   cliente_contrato_modelo: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/cliente_contrato_modelo/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato_modelo/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -597,7 +597,7 @@ let Editar = {
   cliente_contrato_produtos_reajuste_valor: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/cliente_contrato_produtos_reajuste_valor/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato_produtos_reajuste_valor/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -633,7 +633,7 @@ let Editar = {
   cliente_contrato_servicos_param: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/cliente_contrato_servicos_param/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato_servicos_param/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -663,7 +663,7 @@ let Editar = {
   cliente_contrato_tipo: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/cliente_contrato_tipo/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente_contrato_tipo/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -695,7 +695,7 @@ let Editar = {
   cnf_classificacao_tributaria: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/cnf_classificacao_tributaria/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/cnf_classificacao_tributaria/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -778,7 +778,7 @@ let Editar = {
   condicoes_pagamento: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/condicoes_pagamento/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/condicoes_pagamento/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -807,7 +807,7 @@ let Editar = {
   configuracao_geral: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/configuracao_geral/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/configuracao_geral/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -966,7 +966,7 @@ let Editar = {
   configuracao_mvno: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/configuracao_mvno/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/configuracao_mvno/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -986,7 +986,7 @@ let Editar = {
   contas: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/contas/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/contas/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1021,7 +1021,7 @@ let Editar = {
   contato: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/contato/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/contato/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1103,7 +1103,7 @@ let Editar = {
   contato_tipo: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/contato_tipo/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/contato_tipo/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1116,7 +1116,7 @@ let Editar = {
   crm_canditados: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/crm_canditados/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/crm_canditados/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1207,7 +1207,7 @@ let Editar = {
   crm_planos_negociacoes: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/crm_planos_negociacoes/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/crm_planos_negociacoes/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1249,7 +1249,7 @@ let Editar = {
   crm_prospeccao_propostas: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/crm_prospeccao_propostas/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/crm_prospeccao_propostas/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1275,7 +1275,7 @@ let Editar = {
   crm_tipo_candidato: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/crm_tipo_candidato/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/crm_tipo_candidato/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1289,7 +1289,7 @@ let Editar = {
   df_elemento: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/df_elemento/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/df_elemento/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1312,7 +1312,7 @@ let Editar = {
   df_projeto: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/df_projeto/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/df_projeto/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1334,7 +1334,7 @@ let Editar = {
   df_tipo_elemento_regiao: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/df_tipo_elemento_regiao/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/df_tipo_elemento_regiao/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1364,7 +1364,7 @@ let Editar = {
   empresa_setor: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/empresa_setor/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/empresa_setor/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1385,7 +1385,7 @@ let Editar = {
   fh_onu_nao_autorizadas: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/fh_onu_nao_autorizadas/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fh_onu_nao_autorizadas/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1406,7 +1406,7 @@ let Editar = {
   fl_adto_salario: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/fl_adto_salario/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fl_adto_salario/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1429,7 +1429,7 @@ let Editar = {
   fn_apagar: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/fn_apagar/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_apagar/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1482,7 +1482,7 @@ let Editar = {
   fn_areceber: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/fn_areceber/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_areceber/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1575,7 +1575,7 @@ let Editar = {
   fn_areceber_baixas: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/fn_areceber_baixas/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_areceber_baixas/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1602,7 +1602,7 @@ let Editar = {
   fn_carteira_cobranca: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/fn_carteira_cobranca/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_carteira_cobranca/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1821,7 +1821,7 @@ let Editar = {
   fn_movim_finan: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/fn_movim_finan/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_movim_finan/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1849,7 +1849,7 @@ let Editar = {
   fornecedor: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/fornecedor/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/fornecedor/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -1892,7 +1892,7 @@ let Editar = {
   funcionarios: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/funcionarios/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/funcionarios/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2005,7 +2005,7 @@ let Editar = {
   hs_adm_artigos: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/hs_adm_artigos/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/hs_adm_artigos/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2052,7 +2052,7 @@ let Editar = {
   inventario_estoque: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/inventario_estoque/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/inventario_estoque/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2081,7 +2081,7 @@ let Editar = {
   inventario_estoque_almox: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/inventario_estoque_almox/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/inventario_estoque_almox/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2111,7 +2111,7 @@ let Editar = {
   linha_mvno: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/linha_mvno/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/linha_mvno/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2144,7 +2144,7 @@ let Editar = {
   patrimonio: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/patrimonio/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/patrimonio/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2188,7 +2188,7 @@ let Editar = {
   planejamento: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/planejamento/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/planejamento/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2211,7 +2211,7 @@ let Editar = {
   planejamento_analitico: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/planejamento_analitico/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/planejamento_analitico/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2238,7 +2238,7 @@ let Editar = {
   produtos: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/produtos/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/produtos/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2378,7 +2378,7 @@ let Editar = {
   produtos_ixc_mvno: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/produtos_ixc_mvno/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/produtos_ixc_mvno/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2396,7 +2396,7 @@ let Editar = {
   rad_caixa_ftth: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/rad_caixa_ftth/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/rad_caixa_ftth/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2429,7 +2429,7 @@ let Editar = {
   radacct: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/radacct/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radacct/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2473,7 +2473,7 @@ let Editar = {
   radgrupos: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/radgrupos/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radgrupos/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2580,7 +2580,7 @@ let Editar = {
   radpop: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/radpop/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2607,7 +2607,7 @@ let Editar = {
   radpop_ocorrencias: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/radpop_ocorrencias/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_ocorrencias/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2620,7 +2620,7 @@ let Editar = {
   radpop_olt_slot: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/radpop_olt_slot/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_olt_slot/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2638,7 +2638,7 @@ let Editar = {
   radpop_radio: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/radpop_radio/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_radio/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2702,7 +2702,7 @@ let Editar = {
   radpop_radio_cliente: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/radpop_radio_cliente/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_radio_cliente/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2749,7 +2749,7 @@ let Editar = {
   radpop_radio_cliente_fibra: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/radpop_radio_cliente_fibra/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_radio_cliente_fibra/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2834,7 +2834,7 @@ let Editar = {
   radpop_radio_cliente_fibra_perfil: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/radpop_radio_cliente_fibra_perfil/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radpop_radio_cliente_fibra_perfil/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2852,7 +2852,7 @@ let Editar = {
   radusergroup: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/radusergroup/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radusergroup/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -2865,7 +2865,7 @@ let Editar = {
   radusuarios: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/radusuarios/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/radusuarios/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3004,7 +3004,7 @@ let Editar = {
   requisicao_material: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/requisicao_material/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/requisicao_material/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3026,7 +3026,7 @@ let Editar = {
   smtp: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/smtp/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/smtp/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3056,7 +3056,7 @@ let Editar = {
   su_diagnostico: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/su_diagnostico/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/su_diagnostico/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3074,7 +3074,7 @@ let Editar = {
   su_oss_assunto: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/su_oss_assunto/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/su_oss_assunto/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3159,7 +3159,7 @@ let Editar = {
   su_oss_chamado: async (token, id) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/su_oss_chamado/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/su_oss_chamado/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3242,7 +3242,7 @@ let Editar = {
   su_ticket: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/su_ticket/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/su_ticket/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3314,7 +3314,7 @@ let Editar = {
   su_ticket_setor: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/su_ticket_setor/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/su_ticket_setor/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3334,7 +3334,7 @@ let Editar = {
   transf_almox_top: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/transf_almox_top/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/transf_almox_top/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3358,7 +3358,7 @@ let Editar = {
   tv_usuarios: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/tv_usuarios/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/tv_usuarios/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3396,7 +3396,7 @@ let Editar = {
   unidades: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/unidades/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/unidades/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3409,7 +3409,7 @@ let Editar = {
   usuarios: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/usuarios/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/usuarios/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3458,7 +3458,7 @@ let Editar = {
   vd_contratos: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/vd_contratos/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/vd_contratos/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3507,7 +3507,7 @@ let Editar = {
   vd_pedido_venda: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/vd_pedido_venda/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/vd_pedido_venda/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3552,7 +3552,7 @@ let Editar = {
   vd_saida: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/vd_saida/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/vd_saida/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3616,7 +3616,7 @@ let Editar = {
   veiculos: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/veiculos/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/veiculos/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3645,7 +3645,7 @@ let Editar = {
   vendedor: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/vendedor/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/vendedor/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3675,7 +3675,7 @@ let Editar = {
   view_voip_sippeers_cliente: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/view_voip_sippeers_cliente/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/view_voip_sippeers_cliente/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
@@ -3786,7 +3786,7 @@ let Editar = {
   voip_sippeers: async (token, id, params) => {
     let options = {
       method: "PUT",
-      url: `https://isp.ixc/webservice/v1/voip_sippeers/${id}`,
+      url: `https://fidelizoume.ixcsoft.com.br/webservice/v1/voip_sippeers/${id}`,
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + new Buffer.from(token).toString("base64"),
