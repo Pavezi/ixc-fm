@@ -1,10 +1,23 @@
-//Listar----------------------------
+/*
+drop table areceber 
+CREATE TABLE areceber (
+    id SERIAL PRIMARY KEY,
+    nn_ticket VARCHAR(50),
+    id_customer VARCHAR(50),
+    email VARCHAR(50),
+    phone VARCHAR(50),
+    status VARCHAR(50),
+    due_date DATE,
+    value VARCHAR(50) 
+);
+*/
+
+
 import request from "request";
 import pkg from 'pg';
 const { Client } = pkg;
-// import { Client } from 'pg';
 
-let token = '41:de6e44f988b738dfdc3ece49d6c3acfaa8c1cf01dac8d5ceee92b4cc3b8950c4';
+let token = '7:8033b4f49653cb5d04817568aeb93f1f3636d6b90ceb39bf0bda598b843ff90d';
 let options = {
     method: 'GET',
     url: 'https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_areceber',
@@ -25,34 +38,127 @@ let options = {
     json: true,
 };
 
-request(options, function (error, response, body) {
-    new Error(error);
-    // Save the response body to a variable
-    let data = body;
-    // // Connect to the PostgreSQL database
-    const client = new Client({
-        host: "127.0.0.1",
-        port: '5432',
-        user: "fidelizou_me",
-        password: "fidelizou_me",
-        database: "fidelizou_me",
+getData();
+
+// Function to get client data by id
+async function getClientData(clientId) {
+    console.log('getClientData');
+
+    return new Promise((resolve, reject) => {
+        let options = {
+            method: 'GET',
+            url: 'https://fidelizoume.ixcsoft.com.br/webservice/v1/cliente',
+            headers:
+            {
+                'Content-Type': 'application/json',
+                Authorization: 'Basic ' + new Buffer.from(token).toString('base64'),
+                ixcsoft: 'listar'
+            },
+            body:
+            {
+                qtype: 'cliente.id',
+                query: clientId.toString(),
+                oper: '=',
+                page: '1',
+                rp: '1',
+                sortname: 'cliente.id',
+                sortorder: 'desc'
+            },
+
+            json: true
+        };
+        request(options, function (error, response, body) {
+            if (error) reject(error);
+            console.log('reject(error)');
+            resolve(body);
+        });
     });
-    client.connect();
+}
 
-    // Insert the data into the PostgreSQL table
-    const query = {
-        text: `INSERT INTO "areceber" (nn_boleto, id_cliente, status, data_vencimento, valor) VALUES ($1, $2, $3, $4, $5)`,
-        values: [body.property3, body.property15, body.property8, body.property10, body.property11],
+// Function to insert row into the database
+async function insertRowIntoDB(row) {
+    console.log(row.id_cliente)
+    try {
+        const clientData = await getClientData(row.id_cliente);
+        console.log(clientData.registros);
+        console.log(clientData);
 
-    };
-    console.log(user_id);
-
-    client.query(query, (err, res) => {
-        if (err) {
-            console.error(err);
+        if (!clientData || !clientData.registros || clientData.registros.length < 1) {
+            console.error('Error: getClientData returned invalid data:', clientData);
             return;
         }
+
+        const client = new Client({
+            host: "127.0.0.1",
+            port: '5432',
+            user: "fidelizou_me",
+            password: "fidelizou_me",
+            database: "fidelizou_me",
+        });
+
+        client.connect();
+        console.log(clientData.registros[0].id)
+        console.log(clientData.registros[0].email)
+        console.log(clientData.registros[0].telefone_celular)
+        const query = {
+            text: 'INSERT INTO "areceber" (nn_ticket, id_customer, email, phone, status, due_date, value) VALUES ($1, $2, $3, $4, $5, $6, $7)',
+            values: [
+                row.nn_boleto,
+                clientData.registros[0].id || '',
+                clientData.registros[0].email || '',
+                clientData.registros[0].telefone_celular || '',
+                row.status,
+                row.data_vencimento,
+                row.valor
+            ],
+        };
+
+        const res = await client.query(query);
+
         console.log('Data inserted successfully');
+
         client.end();
-    });
-});
+    } catch (err) {
+        console.error(err);
+    }
+}
+
+async function getData() {
+    console.log('getData');
+
+    try {
+        const options = {
+            method: "GET",
+            url: "https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_areceber",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization:
+                    "Basic " + new Buffer.from(token).toString("base64"),
+                ixcsoft: "listar",
+            },
+            body: {
+                qtype: "fn_areceber.status",
+                oper: "=",
+                query: "A",
+                sortname: "fn_areceber.id_contrato",
+                sortorder: "asc",
+                grid_param: '[{"TB": "fn_areceber.data_vencimento", "OP": "<", "P": "23/03/2022"}]',
+            },
+            json: true,
+        };
+        request(options, async function (error, response, body) {
+            if (error) throw new Error(error);
+            const rows = body.registros;
+            console.log('Before for');
+            console.log(rows + ' respone.registros');
+            console.log(response.registros);
+            for (let i = 0; i < rows.length; i++) {
+                const row = rows[i];
+                console.log('Before calling insertRowIntoDB');
+                await insertRowIntoDB(row);
+            }
+        });
+    } catch (err) {
+        console.error(err);
+    }
+}
