@@ -16,6 +16,7 @@ CREATE TABLE areceber (
 import request from "request";
 import pkg from 'pg';
 const { Client } = pkg;
+const date = "23/03/2022";
 
 let token = '7:8033b4f49653cb5d04817568aeb93f1f3636d6b90ceb39bf0bda598b843ff90d';
 let options = {
@@ -33,7 +34,7 @@ let options = {
         "oper": "=", "query": "A",
         "sortname": "fn_areceber.id_contrato",
         "sortorder": "asc",
-        "grid_param": "[{\"TB\": \"fn_areceber.data_vencimento\", \"OP\": \"<\", \"P\": \"23/03/2022\"}]"
+        "grid_param": "[{\"TB\": \"fn_areceber.data_vencimento\", \"OP\": \"<\", \"P\": \"${date}\"}]"
     },
     json: true,
 };
@@ -77,11 +78,10 @@ async function getClientData(clientId) {
 
 // Function to insert row into the database
 async function insertRowIntoDB(row) {
-    console.log(row.id_cliente)
+    console.log(row.id_cliente + ' insertRowIntoDB')
     try {
         const clientData = await getClientData(row.id_cliente);
-        console.log(clientData.registros);
-        console.log(clientData);
+        const today = new Date(); // get the actual date
 
         if (!clientData || !clientData.registros || clientData.registros.length < 1) {
             console.error('Error: getClientData returned invalid data:', clientData);
@@ -97,9 +97,7 @@ async function insertRowIntoDB(row) {
         });
 
         client.connect();
-        console.log(clientData.registros[0].id)
-        console.log(clientData.registros[0].email)
-        console.log(clientData.registros[0].telefone_celular)
+
         const query = {
             text: 'INSERT INTO "areceber" (nn_ticket, id_customer, email, phone, status, due_date, value) VALUES ($1, $2, $3, $4, $5, $6, $7)',
             values: [
@@ -113,11 +111,31 @@ async function insertRowIntoDB(row) {
             ],
         };
 
+        if (row.data_vencimento > today) {
+            console.log("atrasado");
+        } else if (row.data_vencimento === today.setDate(today.getDate() + 3)) {
+            console.log("sua fatura ira vencer em 3 dias");
+        }
+
         const res = await client.query(query);
+        const vencimento = new Date(row.data_vencimento);
+        const hoje = new Date();
 
-        console.log('Data inserted successfully');
+        if (vencimento.getFullYear() === hoje.getFullYear() && vencimento.getMonth() === hoje.getMonth() && vencimento.getDate() === hoje.getDate()) {
+            console.log("sua fatura ira vencer em 1 dia");
+        } else if (vencimento < hoje) {
+            console.log("atrasado");
+        } else {
+            console.log("a data de vencimento ainda não chegou");
+        }
 
+
+        console.log(row.data_vencimento + ' row.data_vencimento');
+        const now = new Date();
+        const localDate = now.toLocaleDateString('en-CA'); // gets the local date as a string in the format 'MM/DD/YYYY'
+        console.log(localDate + ' toLocaleDateString');
         client.end();
+
     } catch (err) {
         console.error(err);
     }
@@ -151,7 +169,7 @@ async function getData() {
             const rows = body.registros;
             console.log('Before for');
             console.log(rows + ' respone.registros');
-            console.log(response.registros);
+            // console.log(response.registros);
             for (let i = 0; i < rows.length; i++) {
                 const row = rows[i];
                 console.log('Before calling insertRowIntoDB');
