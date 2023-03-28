@@ -129,11 +129,23 @@ async function insertRowIntoDB(row) {
             console.log("a data de vencimento ainda não chegou");
         }
 
+        // const now = new Date(); // current date
+        // const tomorrow = new Date(now); // create a new date object with the same value as now
+        // tomorrow.setDate(now.getDate() + 1); // increment the day by 1
+        // const formattedTomorrow = tomorrow.toISOString().slice(0, 10); // convert to YYYY-MM-DD format
+        // console.log(formattedTomorrow); // output: "2023-03-29"
 
-        console.log(row.data_vencimento + ' row.data_vencimento');
-        const now = new Date();
+        const dueDate = new Date(row.data_vencimento);
+        dueDate.setDate(dueDate.getDate() + 3); // increment the day by 1
+        const formatteddueDate = dueDate.toISOString().slice(0, 10); // convert to YYYY-MM-DD format
+
         const localDate = now.toLocaleDateString('en-CA'); // gets the local date as a string in the format 'MM/DD/YYYY'
         console.log(localDate + ' toLocaleDateString');
+
+        console.log(row.data_vencimento + ' row.data_vencimento');
+        console.log(formatteddueDate + ' formatteddueDate'); // output: "2023-03-29"
+        console.log(dueDate + 'dueDate');
+
         client.end();
 
     } catch (err) {
