@@ -3,7 +3,7 @@ import pkg from 'pg';
 const { Client } = pkg;
 
 let token = '7:8033b4f49653cb5d04817568aeb93f1f3636d6b90ceb39bf0bda598b843ff90d';
-getData(-292); // how many days after or before today wil be used in the search
+getData(-291); // how many days after or before today wil be used in the search
 // Function to get client data by id
 async function getClientData(clientId) {
     console.log('getClientData');
@@ -102,13 +102,18 @@ async function getData(days) {
         };
         request(options, async function (error, response, body) {
             if (error) throw new Error(error);
-            const rows = body.registros;
-            console.log('Before for');
-            console.log(rows.length + ' respone.registros');
-            for (let i = 0; i < rows.length; i++) {
-                const row = rows[i];
-                console.log('Before calling insertRowIntoDB');
-                await insertRowIntoDB(row);
+            try {
+                const rows = body.registros;
+                console.log('Before for');
+                if (!rows) throw new Error('No rows found');
+                console.log(rows.length + ' response.registros');
+                for (let i = 0; i < rows.length; i++) {
+                    const row = rows[i];
+                    console.log('Before calling insertRowIntoDB');
+                    await insertRowIntoDB(row);
+                }
+            } catch (err) {
+                console.error(err);
             }
         });
     } catch (err) {
