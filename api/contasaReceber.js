@@ -1,45 +1,9 @@
-/*
-drop table areceber 
-CREATE TABLE areceber (
-    id SERIAL PRIMARY KEY,
-    nn_ticket VARCHAR(50),
-    id_customer VARCHAR(50),
-    email VARCHAR(50),
-    phone VARCHAR(50),
-    status VARCHAR(50),
-    due_date DATE,
-    value VARCHAR(50) 
-);
-*/
-
-
 import request from "request";
 import pkg from 'pg';
 const { Client } = pkg;
 
 let token = '7:8033b4f49653cb5d04817568aeb93f1f3636d6b90ceb39bf0bda598b843ff90d';
-let options = {
-    method: 'GET',
-    url: 'https://fidelizoume.ixcsoft.com.br/webservice/v1/fn_areceber',
-    headers:
-    {
-        'Content-Type': 'application/json',
-        Authorization: 'Basic ' + new Buffer.from(token).toString('base64'),
-        ixcsoft: 'listar'
-    },
-    body:
-    {
-        "qtype": "fn_areceber.status",
-        "oper": "=", "query": "A",
-        "sortname": "fn_areceber.id_contrato",
-        "sortorder": "asc",
-        "grid_param": "[{\"TB\": \"fn_areceber.data_vencimento\", \"OP\": \"<\", \"P\": \"23/03/2022\"}]"
-    },
-    json: true,
-};
-
-getData();
-
+getData(-291); // how many days after or before today wil be used in the search
 // Function to get client data by id
 async function getClientData(clientId) {
     console.log('getClientData');
@@ -64,30 +28,25 @@ async function getClientData(clientId) {
                 sortname: 'cliente.id',
                 sortorder: 'desc'
             },
-
             json: true
         };
-        request(options, function (error, response, body) {
+        request(options, function (error, body, response) {
             if (error) reject(error);
             console.log('reject(error)');
-            resolve(body);
         });
     });
 }
-
 // Function to insert row into the database
 async function insertRowIntoDB(row) {
-    console.log(row.id_cliente)
+    console.log(row.id_cliente + ' insertRowIntoDB')
     try {
         const clientData = await getClientData(row.id_cliente);
-        console.log(clientData.registros);
-        console.log(clientData);
+        const today = new Date(); // get the actual date
 
         if (!clientData || !clientData.registros || clientData.registros.length < 1) {
             console.error('Error: getClientData returned invalid data:', clientData);
             return;
         }
-
         const client = new Client({
             host: "127.0.0.1",
             port: '5432',
@@ -95,11 +54,8 @@ async function insertRowIntoDB(row) {
             password: "fidelizou_me",
             database: "fidelizou_me",
         });
-
         client.connect();
-        console.log(clientData.registros[0].id)
-        console.log(clientData.registros[0].email)
-        console.log(clientData.registros[0].telefone_celular)
+
         const query = {
             text: 'INSERT INTO "areceber" (nn_ticket, id_customer, email, phone, status, due_date, value) VALUES ($1, $2, $3, $4, $5, $6, $7)',
             values: [
@@ -112,20 +68,18 @@ async function insertRowIntoDB(row) {
                 row.valor
             ],
         };
-
-        const res = await client.query(query);
-
-        console.log('Data inserted successfully');
-
         client.end();
     } catch (err) {
         console.error(err);
     }
 }
 
-async function getData() {
+async function getData(days) {
     console.log('getData');
-
+    let now = new Date();
+    now.setDate(now.getDate() + days); // add or subtract days
+    let searchDate = now.toLocaleDateString('pt-BR');
+    console.log(searchDate + "Pt-BR")
     try {
         const options = {
             method: "GET",
@@ -142,20 +96,24 @@ async function getData() {
                 query: "A",
                 sortname: "fn_areceber.id_contrato",
                 sortorder: "asc",
-                grid_param: '[{"TB": "fn_areceber.data_vencimento", "OP": "<", "P": "23/03/2022"}]',
+                grid_param: `[{"TB": "fn_areceber.data_vencimento", "OP": "=", "P": "${searchDate}"}]`
             },
             json: true,
         };
         request(options, async function (error, response, body) {
             if (error) throw new Error(error);
-            const rows = body.registros;
-            console.log('Before for');
-            console.log(rows + ' respone.registros');
-            console.log(response.registros);
-            for (let i = 0; i < rows.length; i++) {
-                const row = rows[i];
-                console.log('Before calling insertRowIntoDB');
-                await insertRowIntoDB(row);
+            try {
+                const rows = body.registros;
+                console.log('Before for');
+                if (!rows) throw new Error('No rows found');
+                console.log(rows.length + ' response.registros');
+                for (let i = 0; i < rows.length; i++) {
+                    const row = rows[i];
+                    console.log('Before calling insertRowIntoDB');
+                    await insertRowIntoDB(row);
+                }
+            } catch (err) {
+                console.error(err);
             }
         });
     } catch (err) {
